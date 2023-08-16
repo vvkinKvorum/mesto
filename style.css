@@ -1,0 +1,805 @@
+html {
+    font-family: "Inter";
+    box-sizing: border-box;
+    overflow-x: hidden;
+    -webkit-overflow-x: hidden;
+    -moz-overflow-x: hidden;
+    -o-overflow-x: hidden;
+    -ms-overflow-x: hidden;
+    margin: auto;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    margin: 0 auto;
+    overflow-x: hidden;
+    -webkit-overflow-x: hidden;
+    -moz-overflow-x: hidden;
+    -o-overflow-x: hidden;
+    -ms-overflow-x: hidden;
+    background: #000;
+}
+
+.body__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 880px;
+    margin: 0 auto;
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .body__wrapper {
+        width: 680px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767.5px) {
+    .body__wrapper {
+        width: 282px;
+    }
+}
+
+
+
+
+.header {
+    display: flex;
+    margin-top: 45px;
+    margin-bottom: 40px;
+    width: 880px;
+    height: 74px;
+    border-bottom: 1px solid #545454;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .header {
+        width: 680px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767.5px) {
+    .header {
+        width: 282px;
+        height: 52px;
+    }
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    width: 142px;
+    height: 33px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .header__logo {
+        width: 104px;
+        height: 24px;
+    }
+}
+
+.main__page {
+    width: 880px;
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .main__page {
+        width: 680px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767.5px) {
+    .main__page {
+        width: 282px;
+    }
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    width: 880px;
+    /* height: 120px; */
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .profile {
+        width: 680px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767.5px) {
+    .profile {
+        width: 282px;
+        flex-direction: column;
+    }
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+@media (min-width: 320px) and (max-width: 767.5px) {
+    .avatar {
+        display: flex;
+        align-self: center;
+        margin-bottom: 22px;
+    }
+}
+
+.block__reg {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 570px;
+    height: 73px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .block__reg {
+        width: 370px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767.5px) {
+    .block__reg {
+        width: 282px;
+    }
+}
+
+.registration {
+    display: flex;
+    align-items: end;
+    width: 336px;
+}
+
+@media (min-width: 320px) and (max-width: 767.5px) {
+    .registration {
+        width: 217px;
+        align-items: center;
+        align-self: center;
+        justify-content: space-around;
+    }
+}
+
+.name {
+    width: 294px;
+    height: 39px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;
+}
+
+@media (min-width: 320px) and (max-width: 767.5px) {
+    .name {
+        width: 189px;
+        height: 26px;
+        font-size: 27px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
+
+.registration__button {
+    display: flex;
+    align-items: flex-end;
+    background: #000;
+    width: 24px;
+    height: 24px;
+    border: #FFF 1px solid
+}
+
+.registration__button:hover {
+    cursor: pointer;
+
+}
+
+@media (min-width: 320px) and (max-width: 767.5px) {
+    .registration__button {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+.button__img {
+    display: flex;
+    align-self: center;
+    margin: 0 auto;
+    width: 10px;
+    height: 10px;
+}
+
+.statys {
+    display: flex;
+    margin-top: 16px;
+    width: 336px;
+    height: 18px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media (min-width: 320px) and (max-width: 767.5px) {
+    .statys {
+        margin-top: 14px;
+        width: 282px;
+        height: 14px;
+        text-align: center;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        justify-content: space-around;
+    }
+}
+
+.add__button {
+    display: flex;
+    align-self: center;
+    width: 150px;
+    height: 50px;
+    border: #FFF 1px solid;
+    background: #000;
+    border-radius: 2px;
+}
+
+.add__button:hover {
+    background: #282727;
+    cursor: pointer;
+    transition: all 0.8s ease-out;
+}
+
+.add__button:active {
+    color: #000;
+    background: #fff;
+    transition: all 0.8s ease-out;
+}
+
+@media (min-width: 320px) and (max-width: 767.5px) {
+    .add__button {
+        width: 282px;
+        height: 50px;
+    }
+}
+
+@keyframes buttonAdd {
+    from {
+        background-color: white;
+    }
+
+    to {
+        background-color: black;
+
+    }
+}
+
+.plus__conteiner {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 150px;
+    height: 22px;
+}
+
+.plus1 {
+    position: relative;
+    top: 7px;
+    display: flex;
+    align-self: center;
+    width: 22px;
+    height: 3px;
+    background: white;
+}
+
+.add__button:active .plus1 {
+    animation-name: buttonAdd;
+    animation-duration: 5s;
+    background: #fff;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+    rotate: -135deg;
+}
+
+.plus2 {
+    display: flex;
+    position: relative;
+    top: 4px;
+    z-index: 1;
+    align-self: center;
+    width: 22px;
+    height: 3px;
+    background: white;
+    rotate: 90deg;
+}
+
+.add__button:active .plus2 {
+    animation-name: buttonAdd;
+    animation-duration: 5s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    background: #fff;
+    rotate: 135deg;
+}
+
+.elements {
+    display: flex;
+    margin-top: 46px;
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .elements {
+        width: 680px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767.5px) {
+    .elements {
+        width: 282px;
+    }
+}
+
+.elements__card {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 880px;
+    gap: 17px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .elements__card {
+        align-self: center;
+        justify-content: space-around;
+        width: 640px;
+        gap: 40px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767.5px) {
+    .elements__card {
+        align-self: center;
+        justify-content: space-around;
+        width: 282px;
+        gap: 20px;
+    }
+}
+
+.card__list {
+    display: flex;
+    flex-direction: column;
+    width: 282px;
+    height: 362px;
+}
+
+.card__img {
+    width: 282px;
+    height: 282px;
+
+}
+
+.card__text {
+    display: flex;
+    justify-content: space-around;
+    width: 282px;
+    height: 79px;
+    background: #FFF;
+    border-radius: 0px 0px 10px 10px;
+
+}
+
+.text__h2 {
+    display: flex;
+    align-self: center;
+    width: 206px;
+    height: 23px;
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.button__card {
+    display: flex;
+    align-self: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: #FFF;
+}
+
+.button__card:hover {
+    cursor: pointer;
+}
+
+.img__like {
+    display: flex;
+    align-self: center;
+    margin: 0 auto;
+    width: 22px;
+    height: 19px;
+
+}
+
+svg {
+    width: 22px;
+    height: 19px;
+}
+
+.img__like:hover path {
+    fill: rgb(45, 45, 45);
+
+
+}
+
+.footer__conteiner {
+    display: flex;
+    margin-top: 67px;
+    margin-bottom: 60px;
+    width: 880px;
+    height: 18px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .footer__conteiner {
+        width: 640px;
+
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767.5px) {
+    .footer__conteiner {
+        width: 320px;
+        justify-content: space-around;
+        margin-top: 48px;
+        margin-bottom: 36px;
+    }
+}
+
+.footer__p {
+    width: 318px;
+    height: 18px;
+    color: #545454;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media (min-width: 320px) and (max-width: 767.5px) {
+    .footer__p {
+        width: 282px;
+        height: 14px;
+        font-size: 14px;
+
+    }
+}
+
+.modal__over {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: rgba(0, 0, 0, 0.5);
+
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    opacity: 0;
+    z-index: 10;
+    top: -10px;
+    left: 425px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .modal {
+        top: -10px;
+        left: 180px;
+
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767.5px) {
+    .modal {
+        top: -10px;
+        left: 20px;
+
+    }
+}
+
+.visible {
+    display: block;
+    opacity: 1;
+    position: absolute;
+    animation: showBlock 1s linear forwards;
+}
+
+@keyframes showBlock {
+    0% {
+        top: 0px;
+        opacity: 0;
+    }
+
+    100% {
+        top: 40px;
+        opacity: 1;
+    }
+}
+
+
+.shadow {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.close__button {
+    margin-left: 432px;
+    width: 32px;
+    height: 32px;
+    background: #000;
+    border: none;
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .close__button {
+        margin-left: 400px;
+        width: 20px;
+        height: 20px;
+
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767.5px) {
+    .close__button {
+        width: 20px;
+        height: 20px;
+        margin-left: 250px;
+
+    }
+}
+
+.modal__body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 430px;
+    height: 330px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .modal__body {
+        width: 382px;
+        height: 322px;
+
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767.5px) {
+    .modal__body {
+        width: 282px;
+        height: 322px;
+
+    }
+}
+
+.modal__content {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    width: 358px;
+    height: 260px;
+}
+
+@media (min-width: 320px) and (max-width: 767.5px) {
+    .modal__content {
+        width: 282px;
+        height: 322px;
+
+    }
+}
+
+.modal__title {
+    display: flex;
+    align-self: center;
+    margin-top: 34px;
+    margin-bottom: 54px;
+    width: 330px;
+    height: 23px;
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+@media (min-width: 320px) and (max-width: 767.5px) {
+    .modal__title {
+        width: 238px;
+        color: #000;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+
+    }
+}
+
+.form__profile {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    width: 358px;
+    height: 260px;
+}
+
+@media (min-width: 320px) and (max-width: 767.5px) {
+    .form__profile {
+        width: 282px;
+        height: 322px;
+
+    }
+}
+
+.form__name {
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 358px;
+    height: 14px;
+    border: none;
+    margin-bottom: 13px;
+}
+
+@media (min-width: 320px) and (max-width: 767.5px) {
+    .form__name {
+        width: 238px;
+        height: 14px;
+        color: #000;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+    }
+}
+
+.form__line {
+    width: 358px;
+    height: 1px;
+    opacity: 0.20000000298023224;
+    background: #000;
+}
+
+@media (min-width: 320px) and (max-width: 767.5px) {
+    .form__line {
+        width: 238px;
+    }
+}
+
+
+.form__statys {
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 358px;
+    height: 14px;
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 13px;
+}
+
+@media (min-width: 320px) and (max-width: 767.5px) {
+    .form__statys {
+        width: 238px;
+        height: 14px;
+        color: #000;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+input::placeholder {
+    color: #000;
+}
+
+.button__save {
+    width: 358px;
+    height: 50px;
+    border-radius: 2px;
+    background: #000;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 48px;
+}
+
+.button__save:hover {
+    opacity: 0.800000011920929;
+    background: #000;
+    transition: all 0.8s ease-out;
+}
+
+.button__save:active {
+    color: #000;
+    background: #fff;
+    transition: all 0.8s ease-out;
+}
+
+@media (min-width: 320px) and (max-width: 767.5px) {
+    .button__save {
+        width: 238px;
+        height: 46px;
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+/*наконец что-то получилось

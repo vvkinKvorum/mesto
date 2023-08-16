@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Montserrat:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./img/karahaevsk.png" type="image/x-icon">
+    <title>Mesto</title>
+</head>
+
+<body>
+    <wrapper class="body__wrapper">
+        <header class="header">
+            <a href="#" class="header__logo"><img src="img/logo.svg" alt="logotip"></a>
+        </header>
+        <main class="main__page">
+            <section class="profile">
+                <img class="avatar" src="img/avatar.jpg" alt="photo">
+                <div class="block__reg">
+                    <div class="registration">
+                        <h1 class="name">Жак-Ив Кусто</h1>
+                        <button class="registration__button"><img class="button__img" src="img/Vector1.svg"
+                                alt="button of registration"></button>
+                    </div>
+                    <h2 class="statys">Исследователь океана</h2>
+                </div>
+                <button class="add__button">
+                    <div class="plus__conteiner">
+                        <span class="plus1"></span>
+                        <span class="plus2"></span>
+                    </div>
+                </button>
+            </section>
+            <section class="elements">
+                <ul class="elements__card">
+                    <li class="card__list">
+                        <img class="card__img" src="./img/karahaevsk.png" alt="karathaevsk">
+                        <div class="card__text">
+                            <h2 class="text__h2">Карачаевск</h2>
+                            <button class="button__card"><svg class="img__like" width="22" height="19"
+                                    viewbox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.2991 9.78586C22.567 7.54338 22.567 3.90213 20.2991 1.68186C18.0311 -0.560619 14.3486 -0.560619 12.0806 1.68186L10.9804 2.792L9.88007 1.70406C7.61215 -0.560619 3.92957 -0.560619 1.6841 1.68186C0.583822 2.76979 0 4.21297 0 5.74496C0 7.27695 0.606277 8.72013 1.6841 9.80806L10.9804 19L20.2991 9.78586ZM1.4371 5.74496C1.4371 4.59042 1.8862 3.52469 2.71702 2.72539C3.5703 1.88168 4.67058 1.45983 5.77086 1.45983C6.87114 1.45983 7.97142 1.88168 8.8247 2.72539L10.9804 4.83465L13.136 2.70318C14.8201 1.03798 17.582 1.03798 19.2437 2.70318C20.0521 3.50248 20.5236 4.56821 20.5236 5.72276C20.5236 6.8773 20.0745 7.94303 19.2437 8.74233L10.9804 16.9351L2.71702 8.76453C1.90865 7.94303 1.4371 6.8773 1.4371 5.74496Z"
+                                        fill="black" />
+                                </svg></button>
+                        </div>
+                    </li>
+                    <li class="card__list">
+                        <img class="card__img" src="./img/elbrus.png" alt="elbrus">
+                        <div class="card__text">
+                            <h2 class="text__h2">Гора Эльбрус</h2>
+                            <button class="button__card"><svg class="img__like" width="22" height="19"
+                                    viewbox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.2991 9.78586C22.567 7.54338 22.567 3.90213 20.2991 1.68186C18.0311 -0.560619 14.3486 -0.560619 12.0806 1.68186L10.9804 2.792L9.88007 1.70406C7.61215 -0.560619 3.92957 -0.560619 1.6841 1.68186C0.583822 2.76979 0 4.21297 0 5.74496C0 7.27695 0.606277 8.72013 1.6841 9.80806L10.9804 19L20.2991 9.78586ZM1.4371 5.74496C1.4371 4.59042 1.8862 3.52469 2.71702 2.72539C3.5703 1.88168 4.67058 1.45983 5.77086 1.45983C6.87114 1.45983 7.97142 1.88168 8.8247 2.72539L10.9804 4.83465L13.136 2.70318C14.8201 1.03798 17.582 1.03798 19.2437 2.70318C20.0521 3.50248 20.5236 4.56821 20.5236 5.72276C20.5236 6.8773 20.0745 7.94303 19.2437 8.74233L10.9804 16.9351L2.71702 8.76453C1.90865 7.94303 1.4371 6.8773 1.4371 5.74496Z"
+                                        fill="black" />
+                                </svg></button>
+                        </div>
+                    </li>
+                    <li class="card__list">
+                        <img class="card__img" src="./img/dombai.png" alt="dombai">
+                        <div class="card__text">
+                            <h2 class="text__h2">Домбай</h2>
+                            <button class="button__card">
+                                <svg class="img__like" width="22" height="19" viewbox="0 0 22 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.2991 9.78586C22.567 7.54338 22.567 3.90213 20.2991 1.68186C18.0311 -0.560619 14.3486 -0.560619 12.0806 1.68186L10.9804 2.792L9.88007 1.70406C7.61215 -0.560619 3.92957 -0.560619 1.6841 1.68186C0.583822 2.76979 0 4.21297 0 5.74496C0 7.27695 0.606277 8.72013 1.6841 9.80806L10.9804 19L20.2991 9.78586ZM1.4371 5.74496C1.4371 4.59042 1.8862 3.52469 2.71702 2.72539C3.5703 1.88168 4.67058 1.45983 5.77086 1.45983C6.87114 1.45983 7.97142 1.88168 8.8247 2.72539L10.9804 4.83465L13.136 2.70318C14.8201 1.03798 17.582 1.03798 19.2437 2.70318C20.0521 3.50248 20.5236 4.56821 20.5236 5.72276C20.5236 6.8773 20.0745 7.94303 19.2437 8.74233L10.9804 16.9351L2.71702 8.76453C1.90865 7.94303 1.4371 6.8773 1.4371 5.74496Z"
+                                        fill="black" />
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="card__list">
+                        <img class="card__img" src="./img/elbrus.png" alt="elbrus">
+                        <div class="card__text">
+                            <h2 class="text__h2">Гора Эльбрус</h2>
+                            <button class="button__card"><svg class="img__like" width="22" height="19"
+                                    viewbox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.2991 9.78586C22.567 7.54338 22.567 3.90213 20.2991 1.68186C18.0311 -0.560619 14.3486 -0.560619 12.0806 1.68186L10.9804 2.792L9.88007 1.70406C7.61215 -0.560619 3.92957 -0.560619 1.6841 1.68186C0.583822 2.76979 0 4.21297 0 5.74496C0 7.27695 0.606277 8.72013 1.6841 9.80806L10.9804 19L20.2991 9.78586ZM1.4371 5.74496C1.4371 4.59042 1.8862 3.52469 2.71702 2.72539C3.5703 1.88168 4.67058 1.45983 5.77086 1.45983C6.87114 1.45983 7.97142 1.88168 8.8247 2.72539L10.9804 4.83465L13.136 2.70318C14.8201 1.03798 17.582 1.03798 19.2437 2.70318C20.0521 3.50248 20.5236 4.56821 20.5236 5.72276C20.5236 6.8773 20.0745 7.94303 19.2437 8.74233L10.9804 16.9351L2.71702 8.76453C1.90865 7.94303 1.4371 6.8773 1.4371 5.74496Z"
+                                        fill="black" />
+                                </svg></button>
+                        </div>
+                    </li>
+                    <li class="card__list">
+                        <img class="card__img" src="./img/dombai.png" alt="dombai">
+                        <div class="card__text">
+                            <h2 class="text__h2">Домбай</h2>
+                            <button class="button__card"><svg class="img__like" width="22" height="19"
+                                    viewbox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.2991 9.78586C22.567 7.54338 22.567 3.90213 20.2991 1.68186C18.0311 -0.560619 14.3486 -0.560619 12.0806 1.68186L10.9804 2.792L9.88007 1.70406C7.61215 -0.560619 3.92957 -0.560619 1.6841 1.68186C0.583822 2.76979 0 4.21297 0 5.74496C0 7.27695 0.606277 8.72013 1.6841 9.80806L10.9804 19L20.2991 9.78586ZM1.4371 5.74496C1.4371 4.59042 1.8862 3.52469 2.71702 2.72539C3.5703 1.88168 4.67058 1.45983 5.77086 1.45983C6.87114 1.45983 7.97142 1.88168 8.8247 2.72539L10.9804 4.83465L13.136 2.70318C14.8201 1.03798 17.582 1.03798 19.2437 2.70318C20.0521 3.50248 20.5236 4.56821 20.5236 5.72276C20.5236 6.8773 20.0745 7.94303 19.2437 8.74233L10.9804 16.9351L2.71702 8.76453C1.90865 7.94303 1.4371 6.8773 1.4371 5.74496Z"
+                                        fill="black" />
+                                </svg></button>
+                        </div>
+                    </li>
+                    <li class="card__list">
+                        <img class="card__img" src="./img/karahaevsk.png" alt="karathaevsk">
+                        <div class="card__text">
+                            <h2 class="text__h2">Карачаевск</h2>
+                            <button class="button__card">
+                                <svg class="img__like" width="22" height="19" viewbox="0 0 22 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.2991 9.78586C22.567 7.54338 22.567 3.90213 20.2991 1.68186C18.0311 -0.560619 14.3486 -0.560619 12.0806 1.68186L10.9804 2.792L9.88007 1.70406C7.61215 -0.560619 3.92957 -0.560619 1.6841 1.68186C0.583822 2.76979 0 4.21297 0 5.74496C0 7.27695 0.606277 8.72013 1.6841 9.80806L10.9804 19L20.2991 9.78586ZM1.4371 5.74496C1.4371 4.59042 1.8862 3.52469 2.71702 2.72539C3.5703 1.88168 4.67058 1.45983 5.77086 1.45983C6.87114 1.45983 7.97142 1.88168 8.8247 2.72539L10.9804 4.83465L13.136 2.70318C14.8201 1.03798 17.582 1.03798 19.2437 2.70318C20.0521 3.50248 20.5236 4.56821 20.5236 5.72276C20.5236 6.8773 20.0745 7.94303 19.2437 8.74233L10.9804 16.9351L2.71702 8.76453C1.90865 7.94303 1.4371 6.8773 1.4371 5.74496Z"
+                                        fill="black" />
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <div class="modal__over">
+            <section id="modal" class="modal">
+                <button class="close__button"><img src="./img/closeIcon.svg" alt="close window icon"></button>
+                <div class="modal__body">
+                    <div class="modal__content">
+                        <div class="modal__title">Редактировать профиль</div>
+                        <form class="form__profile">
+                            <input class="form__name" type="text" placeholder="Жак-Ив Кусто">
+                            <div class="form__line"></div>
+                            <input class="form__statys" type="text" placeholder="Исследователь океана">
+                            <div class="form__line"></div>
+                            <input class="button__save" type="submit" value="Сохранить">
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer__conteiner">
+            <p class="footer__p">© 2023 Mesto Russia<br>Korytkin Vladimir</p>
+        </footer>
+    </wrapper>
+    <script src="index.js"></script>
+</body>
+
+</html>
